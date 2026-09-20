@@ -56,7 +56,7 @@ Below is a comparative breakdown of top identity verification vendors, sorted by
 
 ## 🔓 Open-Source GitHub Projects
 
-Explore top open-source identity verification frameworks, self-hosted KYC servers, and Zero-Knowledge (ZK) identity tools. Sorted by GitHub star count (descending) ⭐.
+Explore top open-source identity verification frameworks, self-hosted KYC servers, and Zero-Knowledge (ZK) identity tools. Sorted by GitHub Stars_Count (descending) ⭐.
 
 - **[PaddleOCR](https://github.com/paddlepaddle/PaddleOCR)** [![Stars](https://img.shields.io/github/stars/paddlepaddle/PaddleOCR?style=social&color=white)](https://github.com/paddlepaddle/PaddleOCR/stargazers)  
   🔤 Multilingual OCR toolkit supporting 80+ languages for extracting text from ID cards, passports, and driver's licenses.
