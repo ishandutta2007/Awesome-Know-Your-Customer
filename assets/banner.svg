@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Animated Scanning Cyber Grid Line -->
+    <style>
+      @keyframes scan {
+        0% { transform: translateY(-50px); opacity: 0.2; }
+        50% { opacity: 0.8; }
+        100% { transform: translateY(350px); opacity: 0.2; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.05); }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      .scan-line {
+        animation: scan 4s ease-in-out infinite;
+      }
+      .pulse-bg {
+        animation: pulse 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-icon {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Dynamic Glowing Background Orbs -->
+  <circle cx="200" cy="150" r="180" fill="url(#glowGrad)" class="pulse-bg" />
+  <circle cx="1000" cy="150" r="220" fill="url(#glowGrad)" class="pulse-bg" style="animation-delay: -3s;" />
+
+  <!-- Tech Grid Overlay -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="800" y1="0" x2="800" y2="300" />
+    <line x1="1000" y1="0" x2="1000" y2="300" />
+  </g>
+
+  <!-- Animated Scanning Laser Line -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#accentGrad)" stroke-width="3" class="scan-line" />
+
+  <!-- Shield / Biometric Icon Graphic on Right Side -->
+  <g transform="translate(940, 75)" class="floating-icon">
+    <!-- Outer Shield Frame -->
+    <path d="M75 10 L135 35 V85 C135 125 75 155 75 155 C75 155 15 125 15 85 V35 Z" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-linejoin="round" />
+    <!-- Biometric Fingerprint/Face Nodes -->
+    <circle cx="75" cy="65" r="24" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="8 4" />
+    <circle cx="75" cy="65" r="10" fill="#a855f7" />
+    <!-- Checkmark Symbol -->
+    <path d="M60 105 L72 117 L95 90" fill="none" stroke="#4ade80" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Top Accent Border Bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accentGrad)" rx="3" />
+
+  <!-- Foreground Title Text -->
+  <text x="80" y="125" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="46" fill="#ffffff" letter-spacing="1">
+    Awesome Know Your Customer 🆔✨
+  </text>
+
+  <!-- Foreground Subtitle Text -->
+  <text x="80" y="175" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="22" fill="#cbd5e1" letter-spacing="0.5">
+    The Complete Ecosystem for Identity Verification, Document OCR &amp; AML Compliance 🛡️
+  </text>
+
+  <!-- Tag Pills -->
+  <g transform="translate(80, 210)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="120" height="32" rx="16" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" />
+    <text x="60" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#a5b4fc" text-anchor="middle">⚡ KYC &amp; KYB</text>
+
+    <!-- Pill 2 -->
+    <rect x="135" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" />
+    <text x="210" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#c084fc" text-anchor="middle">🔍 Biometric OCR</text>
+
+    <!-- Pill 3 -->
+    <rect x="300" y="0" width="150" height="32" rx="16" fill="#1e293b" stroke="#ec4899" stroke-width="1.5" />
+    <text x="375" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#f472b6" text-anchor="middle">🛡️ AML &amp; Liveness</text>
+
+    <!-- Pill 4 -->
+    <rect x="465" y="0" width="155" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="542" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#38bdf8" text-anchor="middle">💻 Open Source</text>
+  </g>
+</svg>
